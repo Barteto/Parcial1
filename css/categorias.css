@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient( #0A84FF #0F1115);
+}
+
+.filtros{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.btn-categoria{
+    color: #0A84FF;
+    background-color: transparent;
+    box-shadow: #0F1115 0px 1px 3px;
+    height: 20px;
+    width: 90px;
+    margin: 20px;
+    font-size: small;
+    padding:auto;
+    display: flexbox;
+    font-family: cursive;
+    
+}
