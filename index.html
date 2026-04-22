@@ -1,1 +1,38 @@
-
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A simple web page">
+        <link rel="icon" href="../assets/favicon/tecnocity-favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/componentes/header.css">
+        <link rel="stylesheet" href="../css/componentes/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>AutoBahia</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-titulo">
+                <img src="../assets/favicon/tecnocity-favicon.png" alt="AutoBahia Logo" class="header-logo">
+                <h1>AutoBahia</h1>
+             </div>
+            <div class="nav-links">   
+                <nav>
+                    <ul>
+                        <input type="text" placeholder="Buscar Producto" class="search-bar">
+                        <form action="filtros" class="filtros-form" >
+                            <select name="categoria" class="categorias-select">
+                                <option value="">Categoría</option>
+                                <option value="componentes">Componentes</option>
+                                <option value="perifericos">Periféricos</option>
+                                <option value="accesorios">Accesorios</option>
+                            </select>
+                        </form>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </body>
+</html>
