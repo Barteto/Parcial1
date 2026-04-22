@@ -28,13 +28,14 @@ h1 span {
 .img-gallery {
     width: 80%;
     margin: 50px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    display: flex;
+    flex-wrap: wrap;      /* permito q las imagenes pasen a la fila q sigue*/
+    justify-content: center;        /* aca las centro*/
     gap: 30px;
 }
 
 .img-gallery img {
-    width: 100%;
+    width: calc(25% - 30px);        /* 4 imagenes por filas*/
     cursor: pointer;
     transition: 1s;
 }
