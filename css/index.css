@@ -1,1 +1,20 @@
+:root {
+    --color-primary: #0A84FF;
+--color-primary-dark: #0066CC;
 
+--color-bg: #0F1115;
+--color-surface: #1A1D23;
+--color-surface-alt: #15181D;
+
+--color-accent-red: #FF3B30;
+--color-accent-green: #30D158;
+--color-accent-yellow: #FFD60A;
+
+--color-text: #FFFFFF;
+--color-text-muted: #B0B3B8;
+--color-text-disabled: #6C6F75;
+
+--color-border: #2A2E35;
+--color-hover: #2F3440;
+
+}

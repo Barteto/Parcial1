@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient( #0A84FF #0F1115);
+}
+
+.filtros{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    ;
+    justify-content: center ;
+    gap: 40px;
+      
+}
+
+.btn-categoria{
+    color: #0A84FF;
+    background-color: transparent;
+    box-shadow: #0F1115 0px 1px 3px;
+    gap: 60px;
+    height: 70px;
+    width: 140px;
+    font-size: small;
+    padding: 10px;
+    font-size: uppercase;
+    border-radius: 40px;
+    background-color: #1A1D23;
+    box-shadow: blue 0px 1px 3px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    
+    
+    
+}
+
+.btn-categoria:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,255,0.3);
+}
