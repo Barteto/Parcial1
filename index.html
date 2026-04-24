@@ -13,47 +13,152 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>AutoBahia</title>
-</head>
-<body>
-    <header>
-        <div class="header-titulo">
-            <img src="assets/img/autocity.png" alt="AutoBahia Logo" class="header-logo">
+    </head>
+    <body>
+        <header>
+            <div class="header-titulo">
+                <img src="assets/img/autocity.png" alt="AutoBahia Logo" class="header-logo">
+            </div>
+            <div class="nav-links">   
+                <nav>
+                    <ul>
+                        <input type="text" placeholder="Buscar Vehículo" class="search-bar">
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="filtros">
+            <button class="btn-categoria" data-categoria="todas">Todas</button>
+            <button class="btn-categoria" data-categoria="sedan">Sedán</button>
+            <button class="btn-categoria" data-categoria="hatchback">Hatchback</button>
+            <button class="btn-categoria" data-categoria="suv">SUV</button>
+            <button class="btn-categoria" data-categoria="pickup">Pickup</button>
+            <button class="btn-categoria" data-categoria="deportivo">Deportivo</button>
         </div>
-        <div class="nav-links">   
-            <nav>
-                <ul>
-                    <input type="text" placeholder="Buscar Vehículo" class="search-bar">
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="filtros">
-        <button class="btn-categoria" data-categoria="todas">Todas</button>
-        <button class="btn-categoria" data-categoria="sedan">Sedán</button>
-        <button class="btn-categoria" data-categoria="hatchback">Hatchback</button>
-        <button class="btn-categoria" data-categoria="suv">SUV</button>
-        <button class="btn-categoria" data-categoria="pickup">Pickup</button>
-        <button class="btn-categoria" data-categoria="deportivo">Deportivo</button>
-</div>
-    </div>
-    <main>
-        
-    </main>
-    <div class="ful-img" id="fulImgBox">
-        <img src="assets/img/auto1.jpg" id="fulImg" alt="">
-        <span onclick="closeImg()">X</span>
-    </div>
-    <h1><span>Car Meeting</span></h1>
-    <div class="img-gallery">
-        <img src="assets/img/auto1.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto2.jpg" onclick="openFullImg(this.src)" alt=""> 
-        <img src="assets/img/auto3.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto4.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto5.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto6.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto7.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto8.jpg" onclick="openFullImg(this.src)" alt="">
-    </div>
-    <script src="js/script.js"></script>
-</body>
+        <main>
+            <h1><span>Car Meeting</span></h1>
+            <div class="contenedor-tarjetas">
+                <div> <div class="tarjeta" data-categoria="sedan">
+                    <img src="assets/img/ventogli.jpg">
+                    <h3>Volkswagen Vento</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="sedan">
+                    <img src="assets/img/cruze.jpg">
+                    <h3>Chevrolet Cruze</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 1.4 Turbo</p>
+                    <p>Color: Blanco</p>
+                </div>
+                <div class="tarjeta" data-categoria="sedan">
+                    <img src="assets/img/corolla.jpg">
+                    <h3>Toyota Corolla</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 1.6 Aspirado</p>
+                    <p>Color: Blanco</p>
+                </div>
+                <div class="tarjeta" data-categoria="hatchback">
+                    <img src="assets/img/yaris.jpg">
+                    <h3>Toyota Yaris</h3>           
+                    <p>Hatchback</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 1.2 Turbo</p>
+                    <p>Color: Blanco</p>
+                </div>
+                <div class="tarjeta" data-categoria="hatchback">
+                    <img src="assets/img/golf.jpg">
+                    <h3>Volkswagen Golf</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="hatchback">
+                    <img src="assets/img/peugeot.jpg">
+                    <h3>Peugeot 208</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="pickup">
+                    <img src="assets/img/f150.jpg">
+                    <h3>Ford F-150 Raptor</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="pickup">
+                    <img src="assets/img/silverado.jpg">
+                    <h3>Chevrolet Silverado</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="pickup">
+                    <img src="assets/img/ram.jpg">
+                    <h3>Dodge Ram 1500</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="suv">
+                    <img src="assets/img/tiguan.jpg">
+                    <h3>Volkswagen Tiguan</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="suv">
+                    <img src="assets/img/x6.jpg">
+                    <h3>BMW X6</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="suv">
+                    <img src="assets/img/q5.jpg">
+                    <h3>Audi Q5</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="deportivo">
+                    <img src="assets/img/ferrarif40.jpg">
+                    <h3>Ferrari F40</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="deportivo">
+                    <img src="assets/img/porsche911.jpg">
+                    <h3>Porsche 911</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+                <div class="tarjeta" data-categoria="deportivo">
+                    <img src="assets/img/camaro.jpg">
+                    <h3>Chevrolet Camaro</h3>
+                    <p>Sedán</p>
+                    <p>Año: 2025</p>
+                    <p>Motor: 2.0 TSI</p>
+                    <p>Color: Gris Platino</p>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
