@@ -1,22 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Galeria de Autos</title>
-        <link rel="stylesheet" href="./css/index.css">
-    </head>
-
-    <body>
-        <main>
-            <div class="contenedor-tarjetas">
-                <div class="tarjeta" data-categoria="sedan">
-                    <img src="./assets/img/VentoGli.jpg" alt="VOLKSWAGEN VENTO GLI">
-                    <h3>VOLKSWAGEN VENTO GLI</h3>
-                    <p>Sedán</p>
-                    <p>Año:2025</p>
-                    <p>Motor: 2.0 TSI 230 CV</p>
-                    <p>Color: Gris Platino</p>
-                </div>
-            </div>
-        </main>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple web page">
+    <link rel="icon" href="assets/favicon/autocity-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/componentes/header.css">
+    <link rel="stylesheet" href="css/componentes/index.css">
+    <link rel="stylesheet" href="css/componentes/galeria.css">
+    <link rel="stylesheet" href="css/categorias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>AutoBahia</title>
+</head>
+<body>
+    <header>
+        <div class="header-titulo">
+            <img src="assets/img/autocity.png" alt="AutoBahia Logo" class="header-logo">
+        </div>
+        <div class="nav-links">   
+            <nav>
+                <ul>
+                    <input type="text" placeholder="Buscar Vehículo" class="search-bar">
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="filtros">
+        <button class="btn-categoria" data-categoria="todas">Todas</button>
+        <button class="btn-categoria" data-categoria="sedan">Sedán</button>
+        <button class="btn-categoria" data-categoria="hatchback">Hatchback</button>
+        <button class="btn-categoria" data-categoria="suv">SUV</button>
+        <button class="btn-categoria" data-categoria="pickup">Pickup</button>
+        <button class="btn-categoria" data-categoria="deportivo">Deportivo</button>
+</div>
+    </div>
+    <main>
+        
+    </main>
+    <div class="ful-img" id="fulImgBox">
+        <img src="assets/img/auto1.jpg" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+    </div>
+    <h1><span>Car Meeting</span></h1>
+    <div class="img-gallery">
+        <img src="assets/img/auto1.jpg" onclick="openFullImg(this.src)" alt="">
+        <img src="assets/img/auto2.jpg" onclick="openFullImg(this.src)" alt=""> 
+        <img src="assets/img/auto3.jpg" onclick="openFullImg(this.src)" alt="">
+        <img src="assets/img/auto4.jpg" onclick="openFullImg(this.src)" alt="">
+        <img src="assets/img/auto5.jpg" onclick="openFullImg(this.src)" alt="">
+        <img src="assets/img/auto6.jpg" onclick="openFullImg(this.src)" alt="">
+        <img src="assets/img/auto7.jpg" onclick="openFullImg(this.src)" alt="">
+        <img src="assets/img/auto8.jpg" onclick="openFullImg(this.src)" alt="">
+    </div>
+    <script src="js/script.js"></script>
+</body>
 </html>
