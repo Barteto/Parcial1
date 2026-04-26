@@ -14,18 +14,3 @@ function openFullImg(reference){
 function closeImg(){
     fulImgBox.style.display = "none";
 }
-
-
-const botones = document.querySelectorAll(".btn-categoria");
-/*cuenta boton por boton*/
-botones.forEach(boton => {
-    /*cuando hace click el usuario detecta y inicializa el evento*/
-    boton.addEventListener("click", () => {
-
-    categoriaActual = boton.dataset.categoria;
-
-    console.log("Categoría seleccionada:", categoriaActual);
-
-    //filtrar(); 
-    });
-});
