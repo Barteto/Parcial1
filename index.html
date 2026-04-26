@@ -32,10 +32,13 @@
     <head>
         <div class="filtros">
 
-    <button class="btn-categoria" data-categoria="todas">Ferrari</button>
-    <button class="btn-categoria" data-categoria="celulares">Mclaren</button>
-    <button class="btn-categoria" data-categoria="notebooks">Porsche</button>
-    <button class="btn-categoria" data-categoria="accesorios">Mercedes</button>
+    <div class="filtros">
+    <button class="btn-categoria" data-categoria="todas">Todas</button>
+    <button class="btn-categoria" data-categoria="ferrari">Ferrari</button>
+    <button class="btn-categoria" data-categoria="mclaren">Mclaren</button>
+    <button class="btn-categoria" data-categoria="mercedes">Mercedes</button>
+    <button class="btn-categoria" data-categoria="porsche">Porsche</button>
+</div>
     
 
 </div>
@@ -54,14 +57,17 @@
     </div>
     <h1><span>Car Meeting</span></h1>
     <div class="img-gallery">
-        <img src="assets/img/auto1.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto2.jpg" onclick="openFullImg(this.src)" alt=""> 
-        <img src="assets/img/auto3.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto4.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto5.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto6.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto7.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto8.jpg" onclick="openFullImg(this.src)" alt="">
+    <img src="assets/img/ferrari.jpg" data-categoria="ferrari" onclick="openFullImg(this.src)">
+    <img src="assets/img/ferrari2.jpg" data-categoria="ferrari" onclick="openFullImg(this.src)">
+    <img src="assets/img/ferrari3.jpg" data-categoria="ferrari" onclick="openFullImg(this.src)">
+
+    <img src="assets/img/mclaren.jpg" data-categoria="mclaren" onclick="openFullImg(this.src)">
+
+    <img src="assets/img/mercedes.jpg" data-categoria="mercedes" onclick="openFullImg(this.src)">
+    <img src="assets/img/mercedes2.jpg" data-categoria="mercedes" onclick="openFullImg(this.src)">
+    <img src="assets/img/mercedes3.jpg" data-categoria="mercedes" onclick="openFullImg(this.src)">
+
+    <img src="assets/img/porsche.jpg" data-categoria="porsche" onclick="openFullImg(this.src)">
     </div>
     <script src="js/script.js"></script>
 
