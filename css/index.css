@@ -18,3 +18,10 @@
 --color-hover: #2F3440;
 
 }
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Saira", sans-serif;
+    margin: 0;
+    padding: 20px;
+}
