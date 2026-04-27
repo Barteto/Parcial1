@@ -118,3 +118,9 @@ h1 span {
     margin: 5px 0;
     color: var(--color-text-muted);
 }
+
+#contador {
+    text-align: center;
+    margin: 10px 0;
+    color: var(--color-primary);
+}

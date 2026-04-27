@@ -1,38 +1,48 @@
+// estado
 let categoriaActual = "todas";
+let textoBusqueda = "";
 
-const fulImgBox = document.getElementById("fulImgBox");
-const fulImg = document.getElementById("fulImg");
-
-function openFullImg(reference){
-    fulImgBox.style.display = "flex";
-    fulImg.src = reference;
-}
-
-function closeImg(){
-    fulImgBox.style.display = "none";
-}
-
+// elementos
 const botones = document.querySelectorAll(".btn-categoria");
+const buscador = document.getElementById("buscador");
 
+// botones
 botones.forEach(boton => {
     boton.addEventListener("click", () => {
         categoriaActual = boton.dataset.categoria;
-        console.log("Categoría seleccionada:", categoriaActual);
-        filtrar(); 
+        filtrar();
     });
 });
 
+// buscador
+buscador.addEventListener("input", () => {
+    textoBusqueda = buscador.value.toLowerCase();
+    filtrar();
+});
 
+// función principal
 function filtrar(){
-    const imagenes = document.querySelectorAll(".auto-card");
+    const cards = document.querySelectorAll(".auto-card");
+    let visibles = 0;
 
-    imagenes.forEach(img => {
-        const categoriaImg = img.dataset.categoria;
+    cards.forEach(card => {
+        const categoria = card.dataset.categoria;
+        const texto = card.textContent.toLowerCase();
 
-        if(categoriaActual === "todas" || categoriaImg === categoriaActual){
-            img.style.display = "block";
+        if(
+            (categoriaActual === "todas" || categoria === categoriaActual) &&
+            texto.includes(textoBusqueda)
+        ){
+            card.style.display = "block";
+            visibles++;
         } else {
-            img.style.display = "none";
+            card.style.display = "none";
         }
     });
+
+    const contador = document.getElementById("contador");
+    contador.textContent = `Mostrando ${visibles} resultados`;
 }
+
+// ejecutar al cargar
+filtrar();
