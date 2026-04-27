@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A simple web page">
-        <link rel="icon" href="assets/favicon/autocity-favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="css/componentes/header.css">
-        <link rel="stylesheet" href="css/componentes/index.css">
-        <link rel="stylesheet" href="css/componentes/galeria.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <title>AutoBahia</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple web page">
+    <link rel="icon" href="assets/favicon/autocity-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/componentes/header.css">
+    <link rel="stylesheet" href="css/componentes/index.css">
+    <link rel="stylesheet" href="css/componentes/galeria.css">
+    <link rel="stylesheet" href="css/categorias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>AutoBahia</title>
     </head>
     <body>
         <header>
@@ -26,45 +27,79 @@
                 </nav>
             </div>
         </header>
-<html>
-    <link rel="stylesheet" href="css/categorias.css">
-    
-    <head>
-        <div class="filtros">
-
-    <button class="btn-categoria" data-categoria="todas">Ferrari</button>
-    <button class="btn-categoria" data-categoria="celulares">Mclaren</button>
-    <button class="btn-categoria" data-categoria="notebooks">Porsche</button>
-    <button class="btn-categoria" data-categoria="accesorios">Mercedes</button>
-    
-
-</div>
-    </head>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Meeting</title>
-    <link rel="stylesheet" href="css/componentes/galeria.css">
-</head>
-<body>
-    <div class="ful-img" id="fulImgBox">
-        <img src="assets/img/auto1.jpg" id="fulImg" alt="">
-        <span onclick="closeImg()">X</span>
-    </div>
-    <h1><span>Car Meeting</span></h1>
-    <div class="img-gallery">
-        <img src="assets/img/auto1.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto2.jpg" onclick="openFullImg(this.src)" alt=""> 
-        <img src="assets/img/auto3.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto4.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto5.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto6.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto7.jpg" onclick="openFullImg(this.src)" alt="">
-        <img src="assets/img/auto8.jpg" onclick="openFullImg(this.src)" alt="">
-    </div>
+            <div class="filtros">
+                <button class="btn-categoria" data-categoria="todas">Todas</button>
+                <button class="btn-categoria" data-categoria="ferrari">Ferrari</button>
+                <button class="btn-categoria" data-categoria="mercedes-benz">Mercedes-Benz</button>
+                <button class="btn-categoria" data-categoria="mclaren">McLaren</button>
+                <button class="btn-categoria" data-categoria="porsche">Porsche</button>
+            </div>
+    <main>
+        <div class="ful-img" id="fulImgBox">
+            <img src="assets/img/auto1.jpg" id="fulImg" alt="">
+            <span onclick="closeImg()">X</span>
+        </div>
+        <h1><span>Car Meeting</span></h1>
+        <div class="img-gallery">
+            <div class="auto-card" data-categoria="ferrari">
+                <img src="assets/img/auto1.jpg" onclick="openFullImg(this.src)">
+                <h3>Ferrari 488 Spider</h3>
+                <p>Motor: V8 3.9L Twin-Turbo — 670cv</p>
+                <p>0-100 km/h: 3.0s</p>
+                <p>Precio Aprox en Arg: USD700.000</p>
+            </div>
+            
+            <div class="auto-card" data-categoria="ferrari">
+                <img src="assets/img/auto2.jpg" onclick="openFullImg(this.src)" alt="">
+                <h3>Ferrari Purosangue</h3>
+                <p>Motor: V12 6.5L — 725cv</p>
+                <p>0-100 km/h: 3.2s</p>
+                <p>Precio Aprox en Arg: USD1.200.000</p>
+            </div>
+            <div class="auto-card" data-categoria="mercedes-benz">
+                <img src="assets/img/auto3.jpg" onclick="openFullImg(this.src)" alt="">
+                <h3>Mercedes C-Class</h3>
+                <p>Motor: 2.0L Turbo — 258cv</p>
+                <p>0-100 km/h: 5.2s</p>
+                <p>Precio Aprox en Arg: USD70.000</p>
+            </div>
+            <div class="auto-card" data-categoria="mercedes-benz">
+                <img src="assets/img/auto4.jpg" onclick="openFullImg(this.src)" alt="">
+                <h3>Mercedes-AMG SL 63</h3>
+                <p>Motor: V8 4.0L Biturbo — 585cv</p>
+                <p>0-100 km/h: 3.2s</p>
+                <p>Precio Aprox en Arg: USD350.000</p>
+            </div>
+            <div class="auto-card" data-categoria="mclaren">
+                <img src="assets/img/auto5.jpg" onclick="openFullImg(this.src)" alt="">
+                <h3>McLaren 720S Spider</h3>
+                <p>Motor: V8 4.0L Twin-Turbo — 720cv</p>
+                <p>0-100 km/h: 2.9s</p>
+                <p>Precio Aprox en Arg: USD650.000</p>
+            </div>
+            <div class="auto-card" data-categoria="mclaren">
+                <img src="assets/img/auto6.jpg" onclick="openFullImg(this.src)" alt="">
+                <h3>McLaren Senna</h3>
+                <p>Motor: V8 4.0L Twin-Turbo — 800cv</p>
+                <p>0-100 km/h: 2.7s</p>
+                <p>Precio Aprox en Arg: USD2.500.000</p>
+            </div>
+            <div class="auto-card" data-categoria="porsche">
+                <img src="assets/img/auto7.jpg" onclick="openFullImg(this.src)" alt="">
+                <h3>Porsche 911 GT3 RS</h3>
+                <p>Motor: Bóxer 4.0L Aspirado — 525cv</p>
+                <p>0-100 km/h: 3.2s</p>
+                <p>Precio Aprox en Arg: USD650.000</p>
+            </div>
+            <div class="auto-card" data-categoria="porsche">
+                <img src="assets/img/auto8.jpg" onclick="openFullImg(this.src)" alt="">
+                <h3>Porsche 911</h3>
+                <p>Motor: V6 3.0L — 335cv</p>
+                <p>0-100 km/h: 5.2s</p>
+                <p>Precio Aprox en Arg: USD550.000</p>
+            </div>
+        </div>
+    </main>
     <script src="js/script.js"></script>
-
-    
     </body>
 </html>
