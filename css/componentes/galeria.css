@@ -41,6 +41,7 @@ h1 span {
     width: calc(25% - 30px);        /* 4 imagenes por filas*/
     cursor: pointer;
     transition: 1s;
+  
 }
 
 /* zoom al pasar x la imagen */
@@ -88,6 +89,9 @@ h1 span {
     color: #fff;
     cursor: pointer;
 }
+
+/*dica chupa pija*/
+
 .auto-card {
     width: 300px;
     text-align: center;

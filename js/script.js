@@ -23,9 +23,8 @@ botones.forEach(boton => {
 });
 
 
-
 function filtrar(){
-    const imagenes = document.querySelectorAll(".img-gallery img");
+    const imagenes = document.querySelectorAll(".auto-card");
 
     imagenes.forEach(img => {
         const categoriaImg = img.dataset.categoria;
