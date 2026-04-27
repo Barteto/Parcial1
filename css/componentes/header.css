@@ -39,7 +39,7 @@ header {
 
 .header-logo {
     width: 300px;
-    height: 250px;
+    height: auto;
     border-radius: 4px;
 
 }
@@ -54,26 +54,21 @@ header {
     padding: 5px 10px;
     margin-right: 20px;
     border-bottom-color: 2px solid var(--color-primary);
-    outline: none;
+    outline: none; /* Elimina el borde predeterminado */
 }
 
 .search-bar:focus {
     border: 2px solid var(--color-primary); 
     outline: none;
-}/* Agrega una transición suave para el efecto hover */
+}/* focus mantiene el borde cuando escribe el usuario */
 
 .search-bar:hover {
     transform: scale(1.05);
     cursor: pointer;
-}
+} /* hover hace que el borde se agrande un poco y el cursor cambie a pointer para indicar que es interactivo */
 
 .search-bar::placeholder {
     color: var(--color-text-muted);
-}
-
-.header-titulo:hover {
-    transform: scale(1.05);
-    cursor: pointer;
 }
 
 .categorias-select{
