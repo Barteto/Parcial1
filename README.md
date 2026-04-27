@@ -1,6 +1,6 @@
 # 🚗 AutoBahia
 
-Una galería estática de autos con sistema de filtros múltiples, desarrollada con HTML, CSS y JavaScript puro.
+Una galería estática de autos con sistema de filtros múltiples, desarrollada con HTML, CSS y JavaScript.
 
 ---
 
