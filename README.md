@@ -11,7 +11,7 @@ Una galería estática de autos con sistema de filtros múltiples, desarrollada 
 | Bautista Cutini |
 | Francesco DiCarli |
 | Lautaro Capdeville |
-| Bautista Bartollini |
+| Bautista Bartolini |
 | Santino Crivera |
 
 ---
