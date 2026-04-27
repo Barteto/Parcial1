@@ -41,6 +41,7 @@ h1 span {
     width: calc(25% - 30px);        /* 4 imagenes por filas*/
     cursor: pointer;
     transition: 1s;
+  
 }
 
 /* zoom al pasar x la imagen */
@@ -88,6 +89,8 @@ h1 span {
     color: #fff;
     cursor: pointer;
 }
+
+
 .auto-card {
     width: 300px;
     text-align: center;
@@ -113,4 +116,10 @@ h1 span {
     font-size: 18px;
     margin: 5px 0;
     color: var(--color-text-muted);
+}
+
+#contador {
+    text-align: center;
+    margin: 10px 0;
+    color: var(--color-primary);
 }
