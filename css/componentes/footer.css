@@ -1,0 +1,24 @@
+:root {
+  --color-primary-dark: #96281b;
+  --color-bg: #111111;
+  --color-surface: #1a1a1a;
+  --color-surface-alt: #141414;
+  --color-border: #2e2e2e;
+  --color-text: #f0f0f0f7;
+  --color-text-muted: #888888;
+  --color-input-bg: #222222;
+  --space: 4px;
+  --radius: 8px;
+}
+
+
+footer {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    font: 1em sans-serif;
+    padding: var(--space);
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
